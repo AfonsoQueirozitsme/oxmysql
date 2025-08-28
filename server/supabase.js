@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
-const url = GetConvar('supabase_url', 'https://kphsbkkjhlnszlqewqnt.supabase.co')
-const serviceKey = GetConvar('supabase_service_key', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtwaHNia2tqaGxuc3pscWV3cW50Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzNzc0OTcsImV4cCI6MjA3MTk1MzQ5N30.q_AUY-3ONcz_qAQOC0lwAmRCcxFHYDvlQP8wpja7jlg')
+const url = GetConvar('supabase_url', '')
+const serviceKey = GetConvar('supabase_service_key', '')
 
 if (!url || !serviceKey) {
   console.error('[oxmysql] Faltam CONVARs supabase_url / supabase_service_key no server.cfg')
